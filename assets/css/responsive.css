@@ -1,0 +1,48 @@
+/* xs screen */
+
+@media only screen and (max-width: 767.999px) {
+     :root {
+        font-size: 8px;
+    }
+    body {
+        font-size: 200%;
+    }
+    .card--right-button button,
+    .card--right-button .button {
+        margin-top: 2rem;
+    }
+    .banner__images {
+        margin-top: 1rem;
+    }
+    .banner__images>img {
+        height: 45px;
+    }
+    .grid__container>*:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* sm screen and above */
+
+@media only screen and (min-width: 768px) {
+    .card--right-button {
+        position: relative;
+    }
+    .card--right-button button,
+    .card--right-button .button {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+    }
+    .banner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid__container {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-areas: 'menu gallery gallery' 'block subscription services';
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
